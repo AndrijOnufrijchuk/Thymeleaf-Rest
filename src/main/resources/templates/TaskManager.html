@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="static.css">
+    <meta charset="UTF-8">
+    <title th:utext="${task.name}"></title>
+</head>
+<body>
+
+ <!-- <p th:text="${task.name}">Test</p> -->
+<form action="#" th:action="@{/task}" th:object="${TaskVo}" method="get">
+
+    <input type="submit" value="Add User">
+</form>
+<!--<form>
+<tr th:object="${task}">
+    <td th:text="${task.name}">Name ...</td>
+    <td th:text="${task.email}">Text ...</td>
+    <td th:text="${task.pwd}">Pwd ...</td>
+</tr>
+</form>-->
+<!--<label for="name" >Name</label>
+   <input type="text" th:field="${name}" class="form-control" id="name" placeholder="Name">
+   <label for="email">email</label>
+   <input type="email" th:field="${email}" class="form-control" id="email" placeholder="email">
+   <label for="pwd">pwd</label>
+   <input type="text" th:field="${pwd}" class="form-control" id="pwd" placeholder="pwd">
+-->
+</body>
+</html>
